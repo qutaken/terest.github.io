@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-CN" >
+	<head>
+	   <meat charset="utf-8">
+		   <base href="https://in.terest.top/music/light/" />
+			<base target="_blank" />
+		<style type="text/css">
+		font{
+			font-family: Roboto; Helvetica; Arial;  sans-serif;
+			font-color: #757575;
+		     text-align: center;
+		    		}
+		a {
+				text-decoration: none;
+				color: #66cc88;
+			}
+			a:visited {
+    text-decoration: none;
+    color: #88eea4;
+		</style>
+		<title>terest Ting</title>
+	</head>
+	<body bgcolor="#b7b7b7">
+	<div class="player-wrapper" style="position: fixed; top: 0px; left: 0px; z-index: 0; height: 70%	; width: 100%; transform: translate3d(0px, 0px, 0px);">
+<div style="background-color: #edf8ef; position: static; width: 100%; height: 100%;">
+<br /><br />
+<center><font size="10" color="#757575">terest Ting</font></center>
+<br />
+<center><font size="4" color="#3"><p>这里是： 轻音乐   区      <br /><br /><a href="http://terest.top/music/" >普通区</a></p></center>
+
+<br /><br /><br /><br /><br /><br /><br /><p style="position: absolute; left: 47%; top: 72%;}">请欣赏 :	</p>
+<br /><p style="position: absolute; left: 42%; top: 80%;}" id="musicName"></p><br /><br /><br /><br /><br />
+<div id="audioBox" >
+<script type="text/javascript">
+window.onload = function(){
+var arr = ["和平之月 - 流水.mp3",
+	"和平之月 - 雪 Snow.mp3",
+	"和平之月 - 雪景色.mp3",
+	"和平之月 - 遠野II.mp3",
+	"和平之月 - 潮騒.mp3",
+	"和平之月 - 峠.mp3",
+	"和平之月 - 森.mp3",
+	"和平之月 - 茜雲.mp3",
+	"Johann Sebastian Bach - Air -Suite No. 3 In D Major, Bwv 1068.mp3",
+	"Johann Sebastian Bach - G弦上的咏叹调.mp3",
+	"群星 - D大调卡农.mp3",
+	"群星 - D大调小夜曲.mp3",
+	"Franz Schubert - 小夜曲.mp3",
+	"瀬川英史 - Brand New Day.mp3",
+	"瀬川英史 - さやかの夢.mp3",
+	"Chopin - 前奏曲 No.15 雨滴.mp3",
+	"风潮唱片 - 晨鸟之歌 (纯自然声音).mp3",
+	"风潮唱片 - 银色山岗 (纯自然声音).mp3",
+	"Dan Gibson - One Last Goodbye.mp3",
+	"Dan Gibson - Driftwood.mp3",
+	"Dan Gibson - The Fallen Leaves.mp3",
+	"Dan Gibson - The Old Bridge.mp3",
+	"Dan Gibson - Cool Forest Rain.mp3",
+	"Dan Gibson - Majesty of the Lake.mp3",
+	"Dan Gibson - Nature's Path.mp3",
+	"Dan Gibson - Crisp and Clear.mp3",
+	"磯村由纪子 - 風の住む街.mp3",
+	"Chopin - 幻想即兴曲.mp3",
+	"夜的钢琴曲五.mp3",
+	"被时光移动的城市.mp3",
+	"李欣芸 - 24小时书店.mp3",
+	"李云迪 - 李斯特：钟.mp3",
+	"January - 비오는 토요일 오후.mp3",
+	"花的微笑.mp3",
+	"初音ミク - 圆周率之歌.mp3",
+	"world's end girlfriend - 风と共に目覚め.mp3",
+	"Dan Gibson - The Canon Stirs.mp3",
+	"Irish Lullaby.mp3",
+	"Johann Strauss II - 蓝色多瑙河.mp3",
+	"迷雾森林.mp3",
+	"Claude Debussy - 钢琴舞曲.mp3",
+	"Robert Schumann - 快乐的农夫.mp3",
+	"Wolfgang Amadeus Mozart - 小星星变奏曲.mp3",
+	"Ida Haendel - 快乐的铁匠.mp3",
+	"Robert Schumann - 西西里舞曲.mp3",
+	"Franz Joseph Haydn - 幻想曲.mp3",
+	"Camille Saint-Sa?ns - 天鹅.mp3",
+	"Chopin - C小调革命练习曲.mp3",
+	"Felix Mendelssohn - 结婚进行曲.mp3",
+	"Johannes Brahms - 圆舞曲.mp3",
+	"贝多芬 - 月光奏鸣曲.mp3",
+	"Franz Schubert - 军队进行曲.mp3",
+	"巴达捷芙斯卡 - 少女的祈祷.mp3",
+	"Rachmaninov - 帕格尼尼主题狂想曲.mp3",
+	"Chopin - 军队波兰舞曲.mp3",
+	"贝多芬 - 悲怆奏鸣曲.mp3",
+	"Johann Sebastian Bach - D大调小步舞曲.mp3",
+	"Wolfgang Amadeus Mozart - D小调幻想曲.mp3",
+	"Johann Sebastian Bach - E大调前奏曲.mp3",
+	"George Gershwin - 蓝色狂想曲.mp3",
+	"Antonín Dvo?ák - 幽默曲.mp3",
+	"Edvard Grieg - 催眠曲.mp3",
+	"Wolfgang Amadeus Mozart - 回旋曲.mp3",
+	"奇然,沈谧仁 - 琵琶行.mp3",
+	"Gabriel Faure - 摇篮曲.mp3",
+	"Gustav Lange - Der Kleine Postillon.mp3",
+	"Robert Schumann - 梦幻曲.mp3",
+	"Pajaro Sunrise - Romeo's Tune.mp3",
+	"Arden Cho - With You.mp3",
+	"Sarah Whatmore - Innocence.mp3",
+	"naomi & goro - Top of the World.mp3",
+	"Joy Enriquez - Losin' The Love.mp3",
+	"Maximilian Hecker - If Only I Could See.mp3",
+	"阁楼北京 - 美好时光.mp3",
+	"Various Artists - Yellow Submarine.mp3",
+	"风潮唱片 - 渴望(木星).mp3",
+	"和平之月 - 银月 Silver Moon.mp3",
+	"和平之月 - A song of Lilies.mp3",
+	"和平之月 - 古道.mp3",
+	"和平之月 - Stardust Tapestry.mp3",
+	"和平之月 - Sakura?樱（夕颜葬原曲）.mp3",
+	"和平之月 - 挚爱 True Love.mp3",
+	"gontiti - 朝.mp3"
+];        
+var i=0;
+var old=0;     
+var myAudio = new Audio();
+myAudio.style.cssText='width: 80%; hight: 32%; position: absolute; left:10%; top: 115%';
+myAudio.autoplay = true;
+myAudio.preload = true;
+myAudio.controls = true;
+myAudio.src = arr[i];  //每次读数组最后一个元素
+old=i;
+i=[ Math.floor(Math.random()83) ];
+myAudio.addEventListener('ended', playEndedHandler, false);
+myAudio.play();
+document.getElementById("audioBox").appendChild(myAudio);
+document.getElementById('musicName').innerText =arr[old].toString();
+myAudio.loop = false;//禁止循环，否则无法触发ended事件
+function playEndedHandler(){
+myAudio.src = arr[i]
+old=i;
+i=[ Math.floor(Math.random()83) ];
+myAudio.play();
+document.getElementById('musicName').innerText =arr[old].toString();
+console.log(arr.length);
+!arr.length && myAudio.removeEventListener('ended',playEndedHandler,false);//只有一个元素时解除绑定
+}
+}
+</script>
+</div>
+</div></div>
+
+	
+	</body>
+</html>	
