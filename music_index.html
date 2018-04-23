@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-<head>
+	<head>
 	   <link type="text/css" rel="stylesheet" href="chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/content.css">
 	<style type="text/css">
-		<base href="https://in.terest.top/music/" />
-			<base target="_blank" />
 		font{
 			font-family: Roboto; Helvetica; Arial;  sans-serif;
 			font-color: #757575;
@@ -19,7 +17,9 @@
     color: #99DDFF;
 		</style>
 		<title>terest Ting</title>
-</head>
+<link type="text/css" rel="stylesheet" href="chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/content.css">
+			<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+			</head>
 <body bgcolor="#eeefee">
 <body bgcolor="#eef1ee">
 		<div  style="    
@@ -38,50 +38,14 @@
     <br /><br />
 <center><font size="10" color="#757575">terest Ting</font></center>
 <br />
-<center><font size="4" color="#2d3d3d"><p>这里是： 普通   区      <br /><br /><a href="http://terest.top/music/light/" >轻音乐区</a></p></center>
+<center><font size="4" color="#2d3d3d"><p>这里是： 普通   区      <br /><br /><a href="http://in.terest.top/music/light/" >轻音乐区</a></p></center>
 
 <br /><br /><br /><br /><br /><br /><br /><p style="position: absolute; left: 47%; top: 52%;}">请欣赏 :	</p>
-<br /><p style="position: absolute; left: 38%; top: 60%;}" id="musicName"></p><br /><br /><br /><br /><br />
+<br /><p style="position: absolute; left: 36%; top: 60%;}" id="musicName"></p><br /><br /><br /><br /><br />
 <div id="audioBox" >
 <script type="text/javascript">
 window.onload = function(){
-var arr = ["Arden Cho - Baby It's You.mp3", 
-"BBMak - Always Know Where You Are.mp3", 
-"Blair - 小花.mp3", 
-"Bob Dylan - Blowin' In The Wind.mp3", 
-"Bruno Mars - The Lazy Song.mp3", 
-"DEVIN K - Back In The Day.mp3", 
-"DEVIN K - Back To LA.mp3", 
-"DEVIN K - Rendezvous.mp3", 
-"DEVIN K - Vacation.mp3", 
-"Elizabeth Mitchell - The Happy Song.mp3", 
-"Elizabeth Mitchell - You Are My Sunshine.mp3", 
-"Emma Stevens - It's Obvious.mp3", 
-"Emma Stevens - So Stop the World.mp3", 
-"Frente! - Let The Sun Shine In.mp3", 
-"Glee Cast - Just Give Me a Reason (Glee Cast Version).mp3", 
-"Glee Cast - Seasons of Love (Glee Cast Version).mp3", 
-"J Rice - Born This Way.mp3", 
-"J Rice - California Gurls (A Capella Beatbox).mp3", 
-"Jackie Greene - I Don't Live In a Dream - live.mp3", 
-"Jason Mraz - Try Try Try.mp3", 
-"Joel Hanson - Traveling Light.mp3", 
-"Joy Williams - Sunny Day.mp3", 
-"Katie Sky - Paradise.mp3", 
-"Lovestoned - Bye Bye Bye.mp3", 
-"Lovestoned - Rising Girl (Radio Version).mp3", 
-"Lucky Stroke - Good Day.mp3", 
-"Ludwig G?ransson Este Haim - California Loco (From ”Inner Workings”).mp3", 
-"Maggie McClure - Good Morning and Good Night.mp3", 
-"Minnutes - Discover.mp3", 
-"Minnutes - I Can.mp3", 
-"MOCCA - Happy.mp3", 
-"MOCCA - I Remember.mp3", 
-"Peabo Bryson & Regina Belle - A Whole New World.mp3", 
-"Pegato,Walk off the Earth - Summer Vibe (Pegato Remix).mp3", 
-"Relient K - Can't Complain.mp3", 
-"Sami - Mistletoe.mp3", 
-"Sons Of Day - Another Day.mp3", 
+var arr = ["Another Day.mp3", 
 "Sons Of Day - Riches And Wine.mp3", 
 "The Dentals - Devil In My Hand (Part 2).mp3", 
 "The Real Group - Big Bad World.mp3", 
@@ -99,6 +63,37 @@ var arr = ["Arden Cho - Baby It's You.mp3",
 "方大同 - If You Leave Me Now.mp3", 
 "方大同 - Nothing's Gonna Change My Love For You.mp3", 
 "李健 - 风吹麦浪.mp3", 
+"Justin Hurwitz - Epilogue - From ”La La Land” Soundtrack.flac", 
+"John Legend - Start A Fire.flac", 
+"Justin Hurwitz - Engagement Party - From ”La La Land” Soundtrack.flac", 
+"Emma Watson Luke Evans Ensemble - Beauty and the Beast - Belle.flac", 
+"Emma Stone Ryan Gosling - A Lovely Night - From ”La La Land” Soundtrack.flac", 
+"Alan Silvestri - Forrest Gump Suite.flac", 
+"Emma Stone - Audition (The Fools Who Dream) - From ”La La Land” Soundtrack.flac", 
+"Ed Sheeran - Photograph.flac", 
+"Thomas Newman - End Title.flac", 
+"蔡琴 - 恰似你的温柔.flac", 
+"陶喆 - 寂寞的季节.flac", 
+"朴树 - 九月.flac", 
+"朴树 - 活着.flac", 
+"Eagles - 加州旅馆 - Live.flac", 
+"蔡琴 - 渡口.flac", 
+"朴树 - 旅途.flac", 
+"Emma Stevens - Give a Little Bit.flac	f", 
+"王若琳 - Vincent.flac", 
+"网易云音乐 - 一首写给她的歌 (民谣版).flac", 
+"李健 - 风吹麦浪.flac", 
+"Lady Gaga - Born This Way.flac", 
+"方大同 - Nothing's Gonna Change My Love For You.flac", 
+"逃跑计划 - 夜空中最亮的星.flac	", 
+"王力宏 - NATURE(大地).flac", 
+"林俊杰 - 当你.flac", 
+"方大同 - If You Leave Me Now.flac", 
+"程璧 - 光芒.flac", 
+"蔡琴-渡口.ape", 
+"Ryan Gosling Emma Stone - City Of Stars - From ”La La Land” Soundtrack.flac", 
+"OneRepublic - Counting Stars.flac	", 
+"La La Land Cast - Another Day Of Sun - From ”La La Land” Soundtrack.flac", 
 "王若琳 - Vincent.flac", 
 "Anthem Lights - Love You Like the Movies.mp3", 
 "朴树 - 九月.mp3", 
@@ -112,26 +107,29 @@ var arr = ["Arden Cho - Baby It's You.mp3",
 "网易云音乐 - 我是传奇.mp3", 
 "程璧 - 光芒.mp3"]
 var i=0;     
-var old=0;   
+var old=0;
+var max=61; 
 var myAudio = new Audio();
 myAudio.style.cssText='width: 80%; hight: 32%; position: absolute; left:10%; top: 75%';
 myAudio.autoplay = true;
 myAudio.preload = true;
 myAudio.controls = true;
-myAudio.src = arr[i];  //每次读数组最后一个元素
+i=Math.floor(Math.random()*max);    //初始化
+myAudio.src = arr[i];  //每次随机读数组一个元素
 old=i;
-i=[ Math.floor(Math.random()66) ];
+i=Math.floor(Math.random()*max); 
 myAudio.addEventListener('ended', playEndedHandler, false);
 myAudio.play();
 document.getElementById("audioBox").appendChild(myAudio);
 document.getElementById('musicName').innerText =arr[old].toString();
+old=i;
 myAudio.loop = false;//禁止循环，否则无法触发ended事件
 function playEndedHandler(){
-myAudio.src = arr[i]
-old=i;
-i=[ Math.floor(Math.random()66) ];
+myAudio.src = arr[i];
+i=Math.floor(Math.random()*max); 
 myAudio.play();
 document.getElementById('musicName').innerText =arr[old].toString();
+old=i;
 console.log(arr.length);
 !arr.length && myAudio.removeEventListener('ended',playEndedHandler,false);//只有一个元素时解除绑定
 }
